@@ -1,31 +1,18 @@
-print("Program 'Koniec gry' 2.0")
+# Zabawne podziękowania
+# Demonstruje sekwencje specjalne
 
-print("Taki sam", "komunikat", "jak przedtem,")
+print("\t\t\tZabawne podziękowania")
 
-print("tylko",
-        "nieco",
-      "większy.")
+print("\t\t\t \\ \\ \\ \\ \\ \\ \\ \\ \\ \\")
+print("\t\t\t      napisał")
+print("\t\t\t     Karol Mróz")
+print("\t\t\t    \\ \\ \\ \\ \\ \\ \\")
 
-print("Oto", end=" ")
-print("on...")
+print("\nSpecjalne podziękowania należą się:")
+print("mojemu bratu,", end=" ")
+print("Zbigniwowi \'Wielkiemu\', który nigdy nie mówi \"nie da się\".")
 
-print(
-        """
-        _  __   ____    _   _   _____   ______    _____ 
-       | |/ /  / __ \  | \ | | |_   _| |  ____|  / ____|
-       | ' /  | |  | | |  \| |   | |   | |__    | |     
-       |  <   | |  | | | . ` |   | |   |  __|   | |     
-       | . \  | |__| | | |\  |  _| |_  | |____  | |____ 
-       |_|\_\  \____/  |_| \_| |_____| |______|  \_____|
-         
-         _____   _____   __     __
-       /  ____| |  __ \  \ \   / /
-       | |  __  | |__) |  \ \_/ / 
-       | | |_ | |  _  /    \   /  
-       | |__| | | | \ \     | |   
-        \_____| |_|  \_\    |_|  
 
-        """
-     )
+print("\a")
 
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
