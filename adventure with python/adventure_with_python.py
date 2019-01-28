@@ -1,18 +1,18 @@
-# Zabawne podziękowania
-# Demonstruje sekwencje specjalne
+# Głupie łańcuchy
+# Demonstruje konkatenację i powielanie łańcuchów
 
-print("\t\t\tZabawne podziękowania")
+print("Możesz dokonać konkatenacji dwóch " + "łańcuchów za pomocą operatora '+'.")
 
-print("\t\t\t \\ \\ \\ \\ \\ \\ \\ \\ \\ \\")
-print("\t\t\t      napisał")
-print("\t\t\t     Karol Mróz")
-print("\t\t\t    \\ \\ \\ \\ \\ \\ \\")
+print("\nTen łańcuch " + "może nie " + "sprawiać wiel" + "kiego wrażenia. " \
+      + "Ale " + "pewnie nie wiesz," + " że jest\n" + "to jeden napraw" \
+      + "d" + "ę" + " długi łańcuch, utworzony przez konkatenację " \
+      + "aż " + "dwudziestu dwu\n" + "różnych łańcuchów i rozbity na " \
+      + "sześć wierszy." + " Jesteś pod" + " wrażeniem tego faktu?\n" \
+      + "Dobrze, ten " + "jeden " + "długi" + " łańcuch właśnie się skończył!")
 
-print("\nSpecjalne podziękowania należą się:")
-print("mojemu bratu,", end=" ")
-print("Zbigniwowi \'Wielkiemu\', który nigdy nie mówi \"nie da się\".")
-
-
-print("\a")
+print("\nJeśli jakiś łańcuch naprawdę Ci się podoba, możesz go powtórzyć.")
+print("Kto na przykład nie lubi lodów?  Masz rację, nikt. Ale jeśli naprawdę ")
+print("je lubisz, powinieneś to wyrazić w adekwatny sposób:")
+print(10 * "Lody!")
 
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
