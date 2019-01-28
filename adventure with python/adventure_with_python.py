@@ -1,18 +1,30 @@
-# Głupie łańcuchy
-# Demonstruje konkatenację i powielanie łańcuchów
+# Zadania tekstowe
+# Liczby i działania matematyczne
 
-print("Możesz dokonać konkatenacji dwóch " + "łańcuchów za pomocą operatora '+'.")
+print("\n\nCiężarna hipopotamica ważąca 1500 kg rodzi 45-kilogramowe młode,")
+print("ale potem zjada 25 kg paszy. Ile wynosi jej nowa waga?")
+input("Aby się dowiedzieć, naciśnij klawisz Enter.")
+print("1500 - 45 + 25 =", 1500 - 45 + 25)
 
-print("\nTen łańcuch " + "może nie " + "sprawiać wiel" + "kiego wrażenia. " \
-      + "Ale " + "pewnie nie wiesz," + " że jest\n" + "to jeden napraw" \
-      + "d" + "ę" + " długi łańcuch, utworzony przez konkatenację " \
-      + "aż " + "dwudziestu dwu\n" + "różnych łańcuchów i rozbity na " \
-      + "sześć wierszy." + " Jesteś pod" + " wrażeniem tego faktu?\n" \
-      + "Dobrze, ten " + "jeden " + "długi" + " łańcuch właśnie się skończył!")
+print("\n\nPoszukiwacz przygód wraca z udanej wyprawy i kupuje każdemu ze swoich")
+print("6 towarzyszy 3 butelki piwa. Ile butelek zostało zakupionych?")
+input("Aby się dowiedzieć, naciśnij klawisz Enter.")
+print("6 * 3 =", 6 * 3)
 
-print("\nJeśli jakiś łańcuch naprawdę Ci się podoba, możesz go powtórzyć.")
-print("Kto na przykład nie lubi lodów?  Masz rację, nikt. Ale jeśli naprawdę ")
-print("je lubisz, powinieneś to wyrazić w adekwatny sposób:")
-print(10 * "Lody!")
+print("\n\nNależność za obiad w restauracji wynosi razem z napiwkiem 159 zł, a Ty")
+print("postanawiasz ze swoimi przyjaciółmi podzielić ją na 4 równe części. Ile")
+print("każde z Was będzie musiało zapłacić?")
+input("Aby się dowiedzieć, naciśnij klawisz Enter.")
+print("159 / 4 =", 159 / 4)
+
+print("\n\n\nGrupa 4 piratów znajduje skrzynię, a w niej 107 złotych monet, i")
+print("postanawia podzielić zdobycz po równo. Ile monet otrzyma każdy z nich?")
+input("Aby się dowiedzieć, naciśnij klawisz Enter.")
+print("107 // 4 =", 107 // 4)
+
+print("\n\n\nTa sama grupa 4 piratów dzieli między siebie po równo 107 złotych")
+print("monet ze znalezionej skrzyni. Ile monet zostanie po podziale?")
+input("Aby się dowiedzieć, naciśnij klawisz Enter.")
+print("107 % 4 =", 107 % 4)
 
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
