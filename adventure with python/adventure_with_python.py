@@ -1,0 +1,1 @@
+print('przygoda z pythonem')
