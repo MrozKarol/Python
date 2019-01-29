@@ -1,19 +1,31 @@
-#Maniulacje cytatami
+#Stosowanie właściwych typów
+#Program z błędem logicznym
 
-quote ="Myślę ze jezyk programowania Python jest bardziej przemyślany niż JavaScrpt "
-print("Moja opinia")
-print(quote)
+print(
+"""
+            Uczestnik funduszu powierniczego
 
-print("\nDużymi literami:")
-print(quote.upper()) 
+Sumuje Twoje miesięczne wydatki, żeby Twój fundusz powierniczy się nie wyczerpał
+(bo wtedy byłbyś zmuszony do podjęcia prawdziwej pracy).
 
-print("\nMałymi literami:")
-print(quote.lower()) 
+Wprowadź swoje wymagane miesięczne koszty.  Ponieważ jesteś bogaty, zignoruj
+grosze i swoje kwoty podaj w pełnych złotych.
 
-print("\nWszystkie wyrazy od duzej litery:")
-print(quote.title()) 
+"""
+)
 
-print("\nZ dobrą zmianą:")
-print(quote.replace("przemyślany", "zmyślny".upper()))
+car =  input("Serwis Mercedesa: ")
+rent = input("Apartament w Śródmieściu: ")
+jet = input("Wynajem prywatnego samolotu: ")
+gifts = input("Podarunki: ")
+food = input("Obiady w restauracjach: ")
+staff = input("Personel (służba domowa, kucharz, kierowca, asystent): ")
+guru = input("Osobisty guru i coach: ")
+games = input("Gry komputerowe: ")
+
+total = car + rent + jet + gifts + food + staff + guru + games
+
+print("\nOgółem:", total)
+
 
 input("\n\n\t\tAby zakonczyć program, nacisnij klawisz enter")
