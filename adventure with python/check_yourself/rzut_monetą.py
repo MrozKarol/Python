@@ -13,10 +13,10 @@ while True:
         break
     elif losowanie % 2 == 0:
         eagle += 1
-        print (eagle)
+        # print (eagle)
     else:
         tails += 1
-        print(tails)
+        # print(tails)
  
  
 print("Po stukrotnym rzucie monetą otrzymałeś nstepujace wyniki: ")
