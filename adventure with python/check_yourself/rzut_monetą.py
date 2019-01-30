@@ -2,13 +2,25 @@
 
 import random
 
-range_of_numbers = random.randint(1,100)
+eagle = 0
+tails = 0
+count = 0
 
-
-
-if range_of_numbers % 2 == 0:
-    print("orzeł")
-else:
-    print("reszka")
+while True:
+    count += 1
+    losowanie = random.randint(1, 2)
+    if count > 100:
+        break
+    elif losowanie % 2 == 0:
+        eagle += 1
+        print (eagle)
+    else:
+        tails += 1
+        print(tails)
+ 
+ 
+print("Po stukrotnym rzucie monetą otrzymałeś nstepujace wyniki: ")
+print("Orzeł wypadł: ", eagle , " razy.")
+print("Rreszka wypadła: ", tails, " razy.")
 
 input("\n\n\t\tAby zakonczyć program, nacisnij klawisz enter")        
