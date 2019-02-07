@@ -12,7 +12,7 @@ WORDS = ("python", "javascript", "git", "konglomerat", "odpowiedź")
 
 word = random.choice(WORDS)
 
-print(word)
+# print(word)
 
 #utwórz zmienną by później uzyć jej do sprawdzenia czy odpowiedź jest poprawna
 correct = word
@@ -25,4 +25,25 @@ while word:
     jumble += word[position]
     word = word = word[:position] + word[(position + 1):]
 
-print(jumble)
+# print(jumble)
+print(
+"""
+           Witaj w grze 'Wymieszane litery'!
+        
+   Uporządkuj litery, aby odtworzyć prawidłowe słowo.
+(Aby zakończyć zgadywanie, naciśnij klawisz Enter bez podawania odpowiedzi.)
+"""
+)
+print("Zgadnij, jakie to słowo:", jumble)
+
+guess = input("\nTwoja odpowiedź: ")
+while guess != correct and guess != "":
+    print("Niestety, to nie to słowo.")
+    guess = input("Twoja odpowiedź: ")
+    
+if guess == correct:
+    print("Zgadza się! Zgadłeś!\n")
+
+print("Dziękuję za udział w grze.")
+
+input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
