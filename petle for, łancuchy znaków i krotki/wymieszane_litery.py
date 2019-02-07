@@ -16,3 +16,13 @@ print(word)
 
 #utwórz zmienną by później uzyć jej do sprawdzenia czy odpowiedź jest poprawna
 correct = word
+
+# utzótz zmienna do której przypiszesz pomieszana wersje słowa
+jumble = ""
+
+while word:
+    position = random.randrange(len(word))
+    jumble += word[position]
+    word = word = word[:position] + word[(position + 1):]
+
+print(jumble)
