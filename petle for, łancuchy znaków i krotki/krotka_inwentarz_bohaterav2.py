@@ -3,7 +3,7 @@
 
 # utwórz krotke zawierajaca elementy i wyswietl za pomocą petli for
 
-inventory =("miecz zagłady",)
+
 inventory =("miecz zagłady",
             "wypasiona zbroja",
             "tarcza szmato",
