@@ -27,3 +27,4 @@ age = int(input('wpisz wiek '))
 agePlusYear = age + 1 
 
 print(name, 'za rok będziesz miał', str(agePlusYear), 'lat')
+
