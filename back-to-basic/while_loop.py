@@ -1,7 +1,7 @@
 # petla
 
-number =  0
+number =  int(input('Wpisz liczbę która zmniejszy sie do 0: '))
 
-while number <= 50:
+while number >= 0:
     print(number)
-    number +=1
+    number -=1
