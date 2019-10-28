@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # spaw aby liczba ujemna stałą sie dodatnia
 
 
