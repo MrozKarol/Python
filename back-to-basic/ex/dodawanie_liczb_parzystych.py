@@ -6,7 +6,7 @@ i=0
 
 while i < 3:
     x = int(input('Podaj liczbę parzysta: '))
-    if (x%2 == 0):
+    if (x%2 == 0 and x > 0):
         wynik += x
     else:
         wybor = str(input('Miałabyć być liczba parzysta, wyśnij a żeby kontynuować b żeby przerwać: '))
