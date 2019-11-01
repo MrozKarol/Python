@@ -11,6 +11,10 @@ while i < 10:
     if(x == szukanaLiczba):
         print("Brawo odnalzałeś liczbę !!! szukana liczba to", str(szukanaLiczba))
         break
+    elif( (szukanaLiczba - x) < 5 and (x - szukanaLiczba)< 5):
+        print('Jesteś blisko')
+    # elif( (szukanaLiczba - x) < 10):
+    #     print('To Twoj obszar poszukiwań')    
     else:
         if(i ==10):
             print("Nie udało Ci sie odgadnąć liczby przekroczyłeś maksymalną liczbę prób")
