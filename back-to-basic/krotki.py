@@ -16,3 +16,11 @@ print(pokoje[49])
 pokoje[50] = 'Barbara BB'
 
 print(pokoje)
+
+# update dodaje
+pokoje.update({999: 'Emila P'})
+print(pokoje)
+
+# del usuwa
+del(pokoje[49])
+print(pokoje)
