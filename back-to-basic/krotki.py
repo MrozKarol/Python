@@ -24,3 +24,13 @@ print(pokoje)
 # del usuwa
 del(pokoje[49])
 print(pokoje)
+
+# pop usuwa wartość i zwaraca
+usunietaWartosc =pokoje.pop(999)
+print(usunietaWartosc)
+
+# popitem usuwa ostatni elemnt
+
+# len(pokoje) -pokazuje ile jest elemntów
+
+# clear pokoje.clear() czyści zawarotść
