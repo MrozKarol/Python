@@ -34,6 +34,10 @@ people2 = [
          {'id': 'KcD9ntE6IRM59vkVta1k', 'name': 'Marie', 'age': 22, 'sex': 'Female'},
          {'id': 'yDlgcn99xPc19mYXcRmy', 'name': 'Agness', 'age': 25, 'sex': 'Female'}               
         ]
+for value in people2:
+    for key in value:
+        print(key, value[key])
+
 
 people3 = ["Arkadiusz",
            "Wiola",
@@ -62,5 +66,5 @@ ratings3 = {
 
 # print(ratings1["Arkadiusz"])
 
-for key in ratings1:
-    print(key, 'oceny', ratings1[key])
+# for key in ratings1:
+#     print(key, 'oceny', ratings1[key])
