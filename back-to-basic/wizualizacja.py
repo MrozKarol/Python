@@ -10,7 +10,10 @@ people = {
         "94cp4hsyZP2BnCh4D34z": {'name': 'Agness', 'age': 25, 'sex': 'Female'},
         "Vr4wRdkljeEs46Czxo54": {'name': 'Chiara', 'age': 17, 'sex': 'Male'},          
          }
-
+for key in people:
+    print('ID:', key)
+    for secendaryKey in people[key]:
+        print(secendaryKey, people[key] [secendaryKey]) 
 [('IcFDG2bO9AYDF651DoyH', {'name': 'John', 'age': 27, 'sex': 'Male'}),
  ('KcD9ntE6IRM59vkVta1k', {'name': 'Marie', 'age': 22, 'sex': 'Female'}),
  ('yDlgcn99xPc19mYXcRmy', {'name': 'Agness', 'age': 25, 'sex': 'Female'}),
@@ -33,17 +36,22 @@ people2 = [
          {'id': 'IcFDG2bO9AYDF651DoyH', 'name': 'John', 'age': 27, 'sex': 'Male'},
          {'id': 'KcD9ntE6IRM59vkVta1k', 'name': 'Marie', 'age': 22, 'sex': 'Female'},
          {'id': 'yDlgcn99xPc19mYXcRmy', 'name': 'Agness', 'age': 25, 'sex': 'Female'}               
-        ]
+
+      ]
+"""      
 for value in people2:
     for key in value:
         print(key, value[key])
 
-
+"""
 people3 = ["Arkadiusz",
            "Wiola",
            "Kuba"
           ]
 
+# for name in people3:
+#     print(name)
+#     print('\n')
 
 ratings1 = {
             "Arkadiusz": (2,1,2,3,2,3),
