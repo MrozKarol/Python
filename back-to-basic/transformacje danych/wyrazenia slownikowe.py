@@ -15,3 +15,20 @@ nameLength ={
 }
 
 print(nameLength)
+
+"""
+przemnozenie razy 6
+"""
+
+mulitpledNumbers ={
+    number : number * 6
+    for number in numbers
+}
+print(mulitpledNumbers)
+
+fahrebheit = {
+    key: celcius*1.8+ 32
+    for key, celcius in celcius.items()
+}
+
+print(fahrebheit)
