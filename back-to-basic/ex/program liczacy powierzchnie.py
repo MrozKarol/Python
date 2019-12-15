@@ -55,6 +55,20 @@ if (wybor == 't'):
     else:
         print(error)               
     
-        
+if (wybor == 'tr'):
+     a = float(input('Podaj długość podstawy a: '))
+     b = float(input('Podaj długość podstawy b: '))
+     if ( a != b and (a > 0 and b >0)):
+         h = float(input('Podaj wyskość trapezu h: '))
+         if(h > 0):
+             pole = pole_trapezu(a, b, h)
+             print('Pole trapezu o podstawach', a, 'i', b, 'równa się', pole)
+
+         else:
+             print(error)
+
+
+      
+
 
       
