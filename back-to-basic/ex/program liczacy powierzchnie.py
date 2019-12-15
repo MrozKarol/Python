@@ -3,7 +3,7 @@ import math
 Program liczący powierzchnie figur
 """
 
-wybor = input('Wybierz pole figury króre chcesz obliczyć\nk - kwadrat\np - prostokąt\nko-koło')
+wybor = input('Wybierz pole figury króre chcesz obliczyć \nk - kwadrat \np - prostokąt \nko-koło \nt-trójkąt \ntr-trapez')
 error = 'coś poszło nie tak'
 
 def pole_kwadratu(a):
@@ -46,7 +46,14 @@ if(wybor == "ko"):
     else:
         print(error)    
     
-                 
+if (wybor == 't'):
+    a = float(input('Podaj długość podstawy: '))
+    h = float(input('Podaj wysokość: '))
+    if (a > 0 and h > 0):
+        pole = pole_trojkata(a,h)
+        print('Pole tójkąta o podstawie,', a, 'i wysokości', h, "równa się", pole) 
+    else:
+        print(error)               
     
         
 
