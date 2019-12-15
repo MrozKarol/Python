@@ -3,7 +3,7 @@ import math
 Program liczący powierzchnie figur
 """
 
-wybor = input('Wybierz pole figury króre chcesz obliczyć\nk - kwadrat\np - prostokąt')
+wybor = input('Wybierz pole figury króre chcesz obliczyć\nk - kwadrat\np - prostokąt\nko-koło')
 error = 'coś poszło nie tak'
 
 def pole_kwadratu(a):
@@ -22,7 +22,7 @@ def pole_trapezu(a, b, h):
     return (a + b) / 2 * h
 
 if(wybor == 'k'):
-    k_bok = int(input('Podaj długość boku'))
+    k_bok = float(input('Podaj długość boku'))
     pole = pole_kwadratu(k_bok)
     if(pole > 0):
         print('Pole kwadratu o boku', k_bok, 'równa się', pole)
@@ -30,13 +30,22 @@ if(wybor == 'k'):
         print(error)
 
 if(wybor == 'p'):
-    a = int(input('Podaj długość boku a'))
-    b = int(input('Podaj długość boku b'))
+    a = float(input('Podaj długość boku a'))
+    b = float(input('Podaj długość boku b'))
     if( a > 0 and b > 0 ):
         pole = pole_prostokata(a,b)
         print('Pole prostokąta o bokach', a, b, 'równa się', pole )
     else:
         print(error)
+
+if(wybor == "ko"):
+    r = float(input('Podaj promień koła'))
+    if(r > 0):
+        pole = pole_kola(r)
+        print('Pole koła o promieniu', r , 'rówa się', pole)
+    else:
+        print(error)    
+    
                  
     
         
