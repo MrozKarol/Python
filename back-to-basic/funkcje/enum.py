@@ -1,13 +1,15 @@
 import math
 
+from enum import IntEnum
 
+Menu_Figury = IntEnum('Menu_Figury', 'Kwadrat, Prostokąt, Koło, Trojkąt, Trapez')
 
 """
 Program liczący powierzchnie figur
 """
 
-
-wybor = input('Wybierz pole figury króre chcesz obliczyć \nk - kwadrat \np - prostokąt \nko-koło \nt-trójkąt \ntr-trapez')
+print(list(Menu_Figury))
+wybor = int(input('Wybierz pole figury króre chcesz obliczyć \n1 - kwadrat \n2 - prostokąt \n3-koło \n4-trójkąt \n5-trapez'))
 error = 'coś poszło nie tak'
 
 def pole_kwadratu(a):
@@ -25,7 +27,7 @@ def pole_trojkata(a, h):
 def pole_trapezu(a, b, h):
     return (a + b) / 2 * h
 
-if(wybor == 'k'):
+if(wybor == Menu_Figury.Kwadrat):
     k_bok = float(input('Podaj długość boku'))
     pole = pole_kwadratu(k_bok)
     if(pole > 0):
@@ -33,7 +35,7 @@ if(wybor == 'k'):
     else:
         print(error)
 
-if(wybor == 'p'):
+if(wybor == Menu_Figury.Prostokąt):
     a = float(input('Podaj długość boku a'))
     b = float(input('Podaj długość boku b'))
     if( a > 0 and b > 0 ):
@@ -42,7 +44,7 @@ if(wybor == 'p'):
     else:
         print(error)
 
-if(wybor == "ko"):
+if(wybor == Menu_Figury.Koło):
     r = float(input('Podaj promień koła'))
     if(r > 0):
         pole = pole_kola(r)
@@ -50,7 +52,7 @@ if(wybor == "ko"):
     else:
         print(error)    
     
-if (wybor == 't'):
+if (wybor == Menu_Figury.Trojkąt):
     a = float(input('Podaj długość podstawy: '))
     h = float(input('Podaj wysokość: '))
     if (a > 0 and h > 0):
@@ -59,7 +61,7 @@ if (wybor == 't'):
     else:
         print(error)               
     
-if (wybor == 'tr'):
+if (wybor == Menu_Figury.Trapez):
      a = float(input('Podaj długość podstawy a: '))
      b = float(input('Podaj długość podstawy b: '))
      if ( a != b and (a > 0 and b >0)):
