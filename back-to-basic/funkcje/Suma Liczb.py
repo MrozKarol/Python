@@ -34,32 +34,37 @@ def sumuj_do4(liczba):
     ))
 
 def sumuj_do5(liczba):
-     return int(((1 + liczba) / 2 * liczba))    
+     return ((1 + liczba) / 2 * liczba)   
+
+
+def finish_timer(start):
+    end = time.perf_counter()
+    return end-start
 
 start = time.perf_counter()
-print(sumuj_do(5))
+print(sumuj_do(8888))
 end = time.perf_counter()
-print(end-start)
+print(finish_timer(start))
 
 start = time.perf_counter()
-print(sumuj_do2(5))
+print(sumuj_do2(8888))
 end = time.perf_counter()
-print(end-start)
+print(finish_timer(start))
 
 start = time.perf_counter()
-print(sumuj_do3(5))
+print(sumuj_do3(8888))
 end = time.perf_counter()
-print(end-start)
-
-
-start = time.perf_counter()
-print(sumuj_do4(5))
-end = time.perf_counter()
-print(end-start)
+print(finish_timer(start))
 
 
 start = time.perf_counter()
-print(sumuj_do5(5))
+print(sumuj_do4(8888))
 end = time.perf_counter()
-print(end-start)
+print(finish_timer(start))
+
+
+start = time.perf_counter()
+print(sumuj_do5(8888))
+end = time.perf_counter()
+print(finish_timer(start))
 
